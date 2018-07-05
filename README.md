@@ -1,13 +1,14 @@
-# mailContent_Analysis
-# 目前分成四個部分來取nodes及edges的keywords，分別是：
-
-1）only remove stopword and counting without tfidf
-2）remove stopword + tf-idf
-3）only counting term fequency + POS without tfidf
-4）POS + TD-IDF
-
-pos tag使用了nltk的pos_tag套件，目前只留下名詞(包含"NN")及動詞("VB")
-
+# mailContent_Analysis<br>
+爬取Wikileaks的mail，nodes為mail所有sender和receiver，有通信的sender和receiver則畫上edge<br>
+目前分成四個部分來取nodes及edges的keywords，分別是：<br>
+<br>
+1）only remove stopword and counting without tfidf<br>
+2）remove stopword + tf-idf<br>
+3）only counting term fequency + POS without tfidf<br>
+4）POS + TD-IDF<br>
+<br>
+取詞性的部分：使用了nltk的pos_tag套件，目前只留下名詞(包含"NN")及動詞("VB")<br>
+<br>
 計算nodes (only remove stopword and counting without tfidf)<br>
 http://140.120.13.242:8888/notebooks/MailContent_Analysis/yun/%5B%20Nodes%20%5D%20Stopwords_only.ipynb
 
