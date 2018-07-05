@@ -1,4 +1,12 @@
 # mailContent_Analysis
+# 目前分成四個部分來取nodes及edges的keywords，分別是：
+
+1）only remove stopword and counting without tfidf
+2）remove stopword + tf-idf
+3）only counting term fequency + POS without tfidf
+4）POS + TD-IDF
+
+pos tag使用了nltk的pos_tag套件，目前只留下名詞(包含"NN")及動詞("VB")
 
 計算nodes (only remove stopword and counting without tfidf)<br>
 http://140.120.13.242:8888/notebooks/MailContent_Analysis/yun/%5B%20Nodes%20%5D%20Stopwords_only.ipynb
